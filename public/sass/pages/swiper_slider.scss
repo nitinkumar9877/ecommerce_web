@@ -238,34 +238,42 @@
 }
 
 /* 1680 desktop */
-@media (min-width: 1680px) and (max-width: 1919px) {
-}
+@media (min-width: 1680px) and (max-width: 1919px) {}
 
 /* 1600 desktop */
-@media (min-width: 1600px) and (max-width: 1679px) {
-}
+@media (min-width: 1600px) and (max-width: 1679px) {}
 
 /* Above 1400 and Below 1599 Desktop*/
-@media (min-width: 1400px) and (max-width: 1599px) {
-}
+@media (min-width: 1400px) and (max-width: 1599px) {}
 
 /* 1300 desktop only */
 @media (min-width: 1300px) and (max-width: 1399px) {
     .swiper_section {
         margin-bottom: 70px;
     }
+
+    .swiper_section .swiper_hello .card_banner .card_left_area {
+        width: 650px;
+    }
+
+    .swiper_section .swiper_hello .card_banner .right_card_area {
+        width: calc(100% - 650px);
+    }
 }
 
 /* 1200 desktop only */
 @media (min-width: 1200px) and (max-width: 1299px) {
-    .ineer_products .product_Swiper .product_type .product_img {
-        height: 260px;
-    }
-
     .swiper_section {
         margin-bottom: 60px;
     }
 
+    .swiper_section .swiper_hello .card_banner .card_left_area {
+        width: 600px;
+    }
+
+    .swiper_section .swiper_hello .card_banner .right_card_area {
+        width: calc(100% - 600px);
+    }
 }
 
 /* Landscape tablets and medium desktops */
@@ -273,7 +281,6 @@
     .swiper_section {
         margin-bottom: 45px;
     }
-
 
     .swiper_section .three_div .inner_three ul li:after {
         margin: 0 12px;
@@ -285,7 +292,7 @@
 
     .swiper-pagination-bullet {
         width: 20px;
-        height: 3px;
+        height: 3px; 
     }
 
     .swiper-button-next,

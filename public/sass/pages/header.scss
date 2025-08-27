@@ -320,10 +320,23 @@
     .header .inner_div_header .right_header .right_left_Search {
         width: calc(100% - 275px);
     }
+
+    .header .nav_div nav ul {
+        justify-content: center;
+        gap: 0px;
+    }
+    .header .nav_div nav ul li .dropdown .dropdown-toggle {
+        font-size: 14px;
+    }
 }
 
 /* Landscape tablets and ipad */
 @media (min-width: 768px) and (max-width: 991px) {
+    .header .nav_div {
+        // font-size: 13px;
+        display: none;
+    }
+
     .header .inner_div_header .left_header {
         width: 140px;
     }

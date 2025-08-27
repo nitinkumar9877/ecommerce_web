@@ -39,7 +39,7 @@ function SwiperSlider() {
                             navigation
                             className="swiper_hello"
                             pagination={{ clickable: true }}
-                            autoplay={{ delay: 3000 }}
+                            // autoplay={{ delay: 3000 }}
                             loop
                         >
                             <SwiperSlide>
