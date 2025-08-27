@@ -10,7 +10,7 @@ import Products from "../componets/products";
 const Homepage = () => {
   return (
     <>
-      <SwiperSlider />
+      {/* <SwiperSlider /> */}
       <CardProduct />
       <Brand />
       <Products />
