@@ -1,0 +1,121 @@
+.feedback_section {
+    width: 100%;
+    padding: 50px 20px;
+    background: #f9f9f9;
+
+    .feedback_container {
+        max-width: 1400px;
+        /* 👈 ye tumhari site ka max-width */
+        margin: 0 auto;
+        display: flex;
+        align-items: stretch;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Left Image */
+    .feedback_left {
+        flex: 1;
+        min-width: 40%;
+        max-width: 45%;
+
+        .feedback_image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    /* Right Form */
+    .feedback_right {
+        flex: 1.2;
+        padding: 40px;
+
+        .heading {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .sub_heading {
+            font-size: 14px;
+            margin-bottom: 25px;
+            color: #666;
+        }
+
+        .feedback_form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .form_group {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                    color: #444;
+                }
+
+                input,
+                select,
+                textarea {
+                    padding: 10px 12px;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    font-size: 14px;
+                    transition: 0.3s;
+
+                    &:focus {
+                        border-color: #6c63ff;
+                        box-shadow: 0 0 6px rgba(108, 99, 255, 0.3);
+                        outline: none;
+                    }
+                }
+            }
+
+            .btn_submit {
+                background: #6c63ff;
+                color: #fff;
+                font-size: 15px;
+                font-weight: 600;
+                padding: 12px;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    background: #5548e7;
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .feedback_section {
+        .feedback_container {
+            flex-direction: column;
+        }
+
+        .feedback_left {
+            max-height: 250px;
+
+            .feedback_image {
+                object-fit: cover;
+            }
+        }
+
+        .feedback_right {
+            padding: 20px;
+        }
+    }
+}
